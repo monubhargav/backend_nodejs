@@ -20,7 +20,6 @@ readFile('./content/first.txt','utf8', (err,result)=>{
             return;
         }
         const second  = result;
-
         writeFile('./content/result-async.txt',
             `Here is the result: ${first}.\n${second}.\n`,
             (err,result)=>{
